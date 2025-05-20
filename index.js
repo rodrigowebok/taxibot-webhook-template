@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 
 async function calculateFare(origin, destination, dateTime) {
-  const key = process.env.GOOGLE_MAPS_API_KEY;
+  const key = process.env.AIzaSyBjpZsBxb3UNQCHMbIG9wLK8AFkH5I5Vgc;
   const url = `https://maps.googleapis.com/maps/api/directions/json`
     + `?origin=${encodeURIComponent(origin)}`
     + `&destination=${encodeURIComponent(destination)}`
